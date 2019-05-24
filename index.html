@@ -30,7 +30,6 @@
             margin: 0 auto;
             border-radius: 4px;
             background-color: #eeeeee;
-            border-bottom: 1px dashed #A9A9A9;
             display: flex;
             align-items: center;
             padding: 10px;
@@ -47,7 +46,7 @@
             width: 60%;
             height: 1000px;
             margin: 0 auto;
-            /* border-top: 1px dashed #A9A9A9; */
+            border-top: 1px dashed #A9A9A9;
             padding: 10px;
             background-color: #eeeeee;
             display: flex;
@@ -58,6 +57,58 @@
             width: 30%;
             height: 100%;
             border-right: 1px solid #A9A9A9;
+            flex-shrink: 0;
+        }
+
+        .img-contanier {
+            width: 150px;
+            height: 150px;
+            margin-left: 25px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 2px 3px 5px rgb(156, 190, 248);
+        }
+
+        .img-contanier img {
+            width: 100%;
+
+        }
+
+        .basic {
+            width: 80%;
+            background-color: rgb(255, 254, 251);
+            padding: 10px;
+            margin: 0 auto;
+            margin-top: 30px;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        .basic p {
+            margin-bottom: 5px;
+        }
+
+        .title {
+            background-color: rgb(199, 199, 199);
+            text-align: center;
+            font-size: 18px;
+            padding: 3px;
+
+        }
+
+        .text-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .right-style {
+            width: 80%;
+            padding: 10px;
+            margin: 0 auto;
+            border-radius: 4px;
+            background-color: cornflowerblue;
+            box-shadow: 2px 3px 5px cornflowerblue;
         }
     </style>
 </head>
@@ -65,7 +116,7 @@
 <body>
     <div class="nav-contanier">
         <div class="nav">
-            <a href="">基本信息</a>
+            <a href="">基本介绍</a>
             <a href="">工作经历</a>
             <a href="">专业技能</a>
             <a href="">自我评价</a>
@@ -73,10 +124,65 @@
 
     </div>
     <div class="text-contanier">
-        <div class="text-left">基本信息</div>
-        <div class="text-right-top">工作经历</div>
-        <div class="text-right-middle">工作经历</div>
-        <div class="text-right-bottom">工作经历</div>
+        <div class="text-left">
+            <div class="img-contanier">
+                <img src="./img/icon.jpg" alt="">
+            </div>
+            <div class="basic">
+                <p class="title"><b>个人信息</b></p>
+                <p>姓名：哈哈</p>
+                <p>性别：女</p>
+                <p>出生：2018.5.24</p>
+                <p>住址:江苏省苏州市</p>
+                <p class="title"><b>教育背景</b></p>
+                <p>毕业院校：盐工</p>
+                <p>就读时间：2013-2017</p>
+                <p>专业：计算机科学与技术</p>
+            </div>
+
+        </div>
+        <div class="text-right">
+            <div class="text-right-top right-style">
+                <div class="title">
+                    工作经历
+                </div>
+                <div>
+                    公司名称：上海华地建设工程有限公司
+                    职业名称：人事专员
+                    在职时间：2017.06-2019.04
+                    工作描述：
+                    1、执行并完善公司的人事制度与计划，培训与发展，绩效评估，员工社会保障福利等方面的管理工作，组织策划员工的各类活动；
+                    2、组织并协助各部门进行招聘、培训和绩效考核等工作；
+                    3、执行并完善员工入职、转正、异动、离职等相关政策及流程；
+                    4、员工人事信息管理与员工档案的维护，核算员工的薪酬福利等事宜；
+                    5、行政物资采购、管理、发放；
+                    6、其他人事日常工作；
+                </div>
+
+            </div>
+            <div class="text-right-middle right-style">
+                <div class="title">
+                    专业技能
+                </div>
+                <div>
+                    1. 精通HTML5/CSS3/Javascript/Ajax等，熟练手写代码，理解如何合理组织代码；
+                    2.熟练使用Vue、Vuex前端框架
+                    3.熟悉Javascript的ES6(ECMAScript 6）标准；
+                    4.熟练使用Git代码管理工具
+                </div>
+
+            </div>
+            <div class="text-right-bottom right-style">
+                <div class="title">
+                        自我评价
+                </div>
+                <div>
+                        有强烈的上进心和求知欲，善于学习和运用新知识，善于沟通和逻辑表达，有强烈的团队意识和执行力；
+                </div>
+                
+            </div>
+        </div>
+
     </div>
 </body>
 
